@@ -97,3 +97,15 @@ function NormalFunc {
     $optional2 | Out-Null && Write-Output $optional2
     
 }
+
+if (Get-Process nonexisfsdfasf) {
+    Write-Output "Never executed";
+}
+
+for ($i = 0; $i -lt $array.Count; $i++) {
+    Write-Output "omg $i";
+}
+
+while (0 -eq 1) {
+    Write-Output "Never executed.";
+}
